@@ -18,11 +18,8 @@ lock = threading.Lock()
 
 
 def time_sleep(task):
-    print(task)
     try:
-        print(task)
         time_str = task.get('time')  # kelgan taskni ichidan time ovolamiz
-        print(time_str)
         from model import Task
 
         if time_str:  # time bor yoqligini tekshiramiz
